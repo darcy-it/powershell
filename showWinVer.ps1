@@ -13,3 +13,6 @@ Get-ComputerInfo | select WindowsProductName, WindowsVersion, OsHardwareAbstract
 # (Get-WmiObject -class Win32_OperatingSystem).Caption | select -first 1
 
 systeminfo /fo csv | ConvertFrom-Csv | select OS*, System*, Hotfix* | Format-List
+
+
+winver
